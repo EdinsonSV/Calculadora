@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Web</title>
+    <!--==================Enlaces css==================-->
+    <link rel="stylesheet" href="../normalize.css">
+    <!--Calculadora-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--==================Calculadora==================-->
+    <form class="container-calculadora" name="containercalculadora">
+        <div class="calculadora">
+            <div class="calculadora__display">
+                <div class="nombre">Edinson SV</div>
+                <input class="display" type="text" name="ans" value="" autocomplete="off" readonly>
+            </div>
+            <input type="reset" class="button-calculadora col-2" value="C"></input>
+            <input type="button" class="button-calculadora" value="&larr;" onclick="borrarUno()"></input>
+            <input type="button" class="button-calculadora operador" value="÷" onclick="imprimirvalores('/')"></input>
+            <input type="button" value="7" class="button-calculadora numero" onclick="imprimirvalores('7')"></input>
+            <input type="button" value="8" class="button-calculadora numero" onclick="imprimirvalores('8')"></input>
+            <input type="button" value="9" class="button-calculadora numero" onclick="imprimirvalores('9')"></input>
+            <input type="button" value="x" class="button-calculadora operador" onclick="imprimirvalores('*')"></input>
+            <input type="button" value="4" class="button-calculadora numero" onclick="imprimirvalores('4')"></input>
+            <input type="button" value="5" class="button-calculadora numero" onclick="imprimirvalores('5')"></input>
+            <input type="button" value="6" class="button-calculadora numero" onclick="imprimirvalores('6')"></input>
+            <input type="button" value="-" class="button-calculadora operador" onclick="imprimirvalores('-')"></input>
+            <input type="button" value="1" class="button-calculadora numero" onclick="imprimirvalores('1')"></input>
+            <input type="button" value="2" class="button-calculadora numero" onclick="imprimirvalores('2')"></input>
+            <input type="button" value="3" class="button-calculadora numero" onclick="imprimirvalores('3')"></input>
+            <input type="button" value="+" class="button-calculadora operador" onclick="imprimirvalores('+')"></input>
+            <input type="button" value="0" class="button-calculadora numero col-2" onclick="imprimirvalores('0')"></input>
+            <input type="button" class="button-calculadora numero" value="." onclick="imprimirvalores('.')"></input>
+            <input type="button" class="button-calculadora operador" value="=" onclick="resultado();"></input>
+        </div>
+    </form>
+    <!--==================Enlaces Js==================-->
+    <!--Calculadora-->
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
